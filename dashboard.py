@@ -12,6 +12,7 @@ import numpy as np
 # Dash theme: DARKLY
 external_stylesheets = [dbc.themes.DARKLY]
 app = dash.Dash(__name__, title='Model Dashboard: Tilte Here', external_stylesheets=[external_stylesheets])
+server = app.server
 
 df = pd.read_csv('Data/customer_dataset.csv')
 features = ['Fresh', 'Milk', 'Grocery', 'Frozen', 'Detergents_Paper', 'Delicatessen']
